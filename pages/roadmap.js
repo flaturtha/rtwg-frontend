@@ -1,9 +1,7 @@
-
-
-export default function About() {
+export default function Roadmap() {
   return (
     <div className="container mx-auto">
-      <h1>About</h1>
+      <h1>Roadmap</h1>
     </div>
   )
 };

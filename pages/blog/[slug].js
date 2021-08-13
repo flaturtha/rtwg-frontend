@@ -8,7 +8,6 @@ function urlFor (source) {
 }
 
 const Post = (props) => {
-    console.log(props);
     const {
         title = 'Missing title',
         name = 'Missing name',
@@ -17,7 +16,7 @@ const Post = (props) => {
         body = []
     } = props
     return (
-        <article>
+        <article className="container mx-auto">
             <h1>{title}</h1>
             <span>By {name}</span>
             {categories && (

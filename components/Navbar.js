@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-indigo-800 p-3 '>
+      <nav className='flex items-center flex-wrap bg-indigo-800 p-3 lg:mb-20'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 text-indigo-200 hover:text-indigo-50'>
           <svg className="h-8 w-8 mr-2" xmlns="http://www.w3.org/200/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,28 +35,28 @@ export default function Navbar() {
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:items-center items-  flex flex-col lg:h-auto'>
-            <Link href='/'>
+            <Link href='/rope'>
               <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
                 R.O.P.E.™
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/how-i-work'>
               <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
                 How I Work
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/blog'>
               <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
                 Blog
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/about'>
               <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
                 About
               </a>
             </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 mt-8 text-center text-2xl lg:text-base rounded bg-yellow-400 text-yellow-900 font-bold items-center justify-center hover:text-yellow-800 hover:bg-yellow-300'>
+            <Link href='/roadmap'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 mt-8 lg:ml-80 lg:mr-20 lg:mt-0 text-center text-2xl lg:text-base rounded bg-yellow-400 text-yellow-900 font-bold items-center justify-center hover:text-yellow-800 hover:bg-yellow-300'>
                 Book Roadmap Session
               </a>
             </Link>

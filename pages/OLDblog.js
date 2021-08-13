@@ -24,7 +24,6 @@ export async function getStaticProps() {
 }
 
 export default function Blog(posts) {
-  console.log(posts);
   return (
     <div className='bg-gray-300 container mx-auto'>
       <div className='max-w-screen-2xl mx-auto'>

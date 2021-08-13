@@ -4,9 +4,8 @@ import client from '../client'
 
 const Blog = (props) => {
     const { posts = [] } = props
-    console.log(posts);
     return (
-        <div>
+        <div className="container mx-auto">
             <h1>Welcome to the Blog!</h1>
             {posts.map(
                 ({ _id, title = '', slug = '', publishedAt = '' }) =>
