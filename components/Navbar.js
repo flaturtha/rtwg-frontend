@@ -7,7 +7,7 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-indigo-800">
+    <div className="bg-indigo-800 sticky top-0 z-50 shadow-xl">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between z-50">
           <a
@@ -21,9 +21,9 @@ export default function Nav() {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+                href="/rope"
+                aria-label="Rope Method"
+                title="Rope Method"
                 className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
               >
                 R.O.P.E.™
@@ -31,9 +31,9 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+                href="/how-i-work"
+                aria-label="How I Work"
+                title="How I Work"
                 className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
               >
                 How I Work
@@ -41,9 +41,9 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="/"
-                aria-label="Product pricing"
-                title="Product pricing"
+                href="/blog"
+                aria-label="Blog"
+                title="Blog"
                 className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
               >
                 Blog
@@ -51,9 +51,9 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="/"
-                aria-label="About us"
-                title="About us"
+                href="/about"
+                aria-label="About"
+                title="About"
                 className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
               >
                 About
@@ -63,10 +63,10 @@ export default function Nav() {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <a
-                href="/"
+                href="/roadmap"
                 className="inline-flex items-center justify-center h-12 px-6 font-black tracking-wide text-yellow-900 hover:text-yellow-800 font-bold transition duration-200 rounded shadow-md bg-yellow-400 hover:bg-yellow-300 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
+                aria-label="Book Roadmap Session"
+                title="Book Roadmap Session"
               >
                 Book Roadmap Session
               </a>
@@ -116,9 +116,9 @@ export default function Nav() {
                     <ul className="space-y-4">
                       <li>
                         <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
+                          href="/rope"
+                          aria-label="Rope Method"
+                          title="Rope Method"
                           className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           R.O.P.E.™
@@ -126,9 +126,9 @@ export default function Nav() {
                       </li>
                       <li>
                         <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
+                          href="/how-i-work"
+                          aria-label="How I Work"
+                          title="How I Work"
                           className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           How I Work
@@ -136,9 +136,9 @@ export default function Nav() {
                       </li>
                       <li>
                         <a
-                          href="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
+                          href="/blog"
+                          aria-label="Blog"
+                          title="Blog"
                           className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Blog
@@ -146,9 +146,9 @@ export default function Nav() {
                       </li>
                       <li>
                         <a
-                          href="/"
-                          aria-label="About us"
-                          title="About us"
+                          href="/about"
+                          aria-label="About"
+                          title="About"
                           className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About
@@ -156,10 +156,10 @@ export default function Nav() {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/roadmap"
                           className="inline-flex items-center justify-center w-full h-12 mt-6 px-6 font-black tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
+                          aria-label="Book Roadmap Session"
+                          title="Book Roadmap Session"
                         >
                           Book Roadmap Session
                         </a>

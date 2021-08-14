@@ -89,13 +89,13 @@ export default function Hero() {
               <div className="flex justify-around flex-col md:flex-row md:mb-32">
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 mb-6 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 mb-6 px-6 font-medium tracking-wide text-yellow-900 hover:text-yellow-800 font-black transition duration-200 rounded shadow-md bg-yellow-400 hover:bg-yellow-300 focus:shadow-outline focus:outline-none"
                 >
                   Book Roadmap Session
                 </a>
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-deep-purple-accent-400 transition duration-200 rounded shadow-md bg-white hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-deep-purple-accent-400 font-black transition duration-200 rounded shadow-md bg-white hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 >
                   Download R.O.P.E.™ Method Guide
                 </a>
