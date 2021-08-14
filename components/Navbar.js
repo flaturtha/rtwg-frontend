@@ -1,70 +1,177 @@
-import Link from 'next/link';
-import Logo from '../components/Logo'
-
-import { useState } from 'react';
+import Logo from './Logo'
 import Hamburger from './Hamburger';
 
-export default function Navbar() {
-  const [active, setActive] = useState(false);
+import { useState } from 'react';
 
-  const handleClick = () => {
-    setActive(!active);
-  };
+export default function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
-      <nav className='flex items-center flex-wrap bg-indigo-800 p-3 lg:mb-20'>
-        <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 text-indigo-200 hover:text-indigo-50'>
-          <Logo className="w-8 h-8" /><span className="font-semibold text-lg">R&middot;T&middot;W&middot;G</span>
+    <div className="bg-indigo-800">
+      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="relative flex items-center justify-between z-50">
+          <a
+            href="/"
+            aria-label="Company"
+            title="Company"
+            className="inline-flex items-center"
+          >
+            <Logo className="w-8 h-8 text-indigo-100" /><span className="font-semibold text-lg text-indigo-100">R&middot;T&middot;W&middot;G</span>
           </a>
-        </Link>
-        <button
-          className='inline-flex p-3 lg:hidden ml-auto text-indigo-200 hover:text-indigo-50 outline-none'
-          onClick={handleClick}
-        >
-          <Hamburger className="w-8 h-8" />
-        </button>
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-        <div
-          className={`${
-            active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
-        >
-          <div className='lg:inline-flex lg:flex-row lg:items-center flex flex-col lg:h-auto border-2 border-red-700 md:flex md:justify-between'>
-            <div className="bg-yellow-400">
-            <Link href='/rope'>
-              <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
+          <ul className="flex items-center hidden space-x-8 lg:flex">
+            <li>
+              <a
+                href="/"
+                aria-label="Our product"
+                title="Our product"
+                className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
+              >
                 R.O.P.E.™
               </a>
-            </Link>
-            <Link href='/how-i-work'>
-              <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
+            </li>
+            <li>
+              <a
+                href="/"
+                aria-label="Our product"
+                title="Our product"
+                className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
+              >
                 How I Work
               </a>
-            </Link>
-            <Link href='/blog'>
-              <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
+            </li>
+            <li>
+              <a
+                href="/"
+                aria-label="Product pricing"
+                title="Product pricing"
+                className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
+              >
                 Blog
               </a>
-            </Link>
-            <Link href='/about'>
-              <a className='lg:inline-flex px-3 py-2 mt-2 ml-20 text-2xl lg:text-base text-indigo-200 font-bold items-center justify-center hover:text-indigo-50 hover:underline'>
+            </li>
+            <li>
+              <a
+                href="/"
+                aria-label="About us"
+                title="About us"
+                className="font-black tracking-wide text-indigo-100 transition-colors duration-200 hover:underline hover:text-white active:underline"
+              >
                 About
               </a>
-            </Link>
-            </div>
-            <div className="bg-green-500 md:flex">
-            <Link href='/roadmap'>
-              <a className='lg:inline-flex lg:w-auto w-full md:w-auto px-3 py-2 mt-8 lg:mr-20 lg:mt-0 text-center text-2xl lg:text-base rounded bg-yellow-400 text-yellow-900 font-bold items-center justify-center hover:text-yellow-800 hover:bg-yellow-300'>
+            </li>
+          </ul>
+          <ul className="flex items-center hidden space-x-8 lg:flex">
+            <li>
+              <a
+                href="/"
+                className="inline-flex items-center justify-center h-12 px-6 font-black tracking-wide text-yellow-900 hover:text-yellow-800 font-bold transition duration-200 rounded shadow-md bg-yellow-400 hover:bg-yellow-300 focus:shadow-outline focus:outline-none"
+                aria-label="Sign up"
+                title="Sign up"
+              >
                 Book Roadmap Session
               </a>
-            </Link>
-            <p className="hidden">{/* removed lg:ml-80 */} from the Book Roadmap Session 'a' tag</p>
-            </div>
+            </li>
+          </ul>
+          <div className="lg:hidden">
+            <button
+              aria-label="Open Menu"
+              title="Open Menu"
+              className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+              onClick={() => setIsMenuOpen(true)}
+            >
+              <Hamburger className="w-8 h-8 text-indigo-100 hover:text-white" />
+
+            </button>
+            {isMenuOpen && (
+              <div className="absolute top-0 left-0 w-full">
+                <div className="p-5 bg-white border rounded shadow-sm">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <a
+                        href="/"
+                        aria-label="Company"
+                        title="Company"
+                        className="inline-flex items-center"
+                      >
+                        <Logo className="w-8 h-8 text-indigo-100" /><span className="font-semibold text-xl text-indigo-100">R&middot;T&middot;W&middot;G</span>
+                      </a>
+                    </div>
+                    <div>
+                      <button
+                        aria-label="Close Menu"
+                        title="Close Menu"
+                        className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+                          <path
+                            fill="currentColor"
+                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul className="space-y-4">
+                      <li>
+                        <a
+                          href="/"
+                          aria-label="Our product"
+                          title="Our product"
+                          className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          R.O.P.E.™
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/"
+                          aria-label="Our product"
+                          title="Our product"
+                          className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          How I Work
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/"
+                          aria-label="Product pricing"
+                          title="Product pricing"
+                          className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Blog
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/"
+                          aria-label="About us"
+                          title="About us"
+                          className="font-black tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/"
+                          className="inline-flex items-center justify-center w-full h-12 mt-6 px-6 font-black tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                          aria-label="Sign up"
+                          title="Sign up"
+                        >
+                          Book Roadmap Session
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            )}
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </div>
   );
 };
