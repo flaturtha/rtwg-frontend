@@ -2,7 +2,6 @@ import Link from 'next/link'
 import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import client from '../client'
-import Posts from '../components/Posts'
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
@@ -14,7 +13,7 @@ const Blog = (props) => {
       <>
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-2">
-            <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg order-last md:order-first">
+            <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg order-last lg:order-first">
               <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
                 <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
                   <polyline
@@ -119,10 +118,10 @@ const Blog = (props) => {
               _id,
               title = "",
               slug = "",
-              publishedAt = "",
+              _createdAt = "",
               blurb = "",
               mainImage = "",
-              categories,
+              categories = "",
             }) =>
               slug && (
                 <li className="list-none mb-8" key={_id}>
@@ -133,8 +132,10 @@ const Blog = (props) => {
                   )}
               <div className="p-5 border border-t-0">
                 <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                Category
-                  <span className="text-gray-600 italic ">— {new Date(publishedAt).toDateString()}</span>
+                <p className="text-gray-500 italics list-none text-sm">
+              CATEGORY &rarr; XXXX
+            </p>
+                  <span className="text-gray-600 italic ">— {new Date(_createdAt).toDateString()}</span>
                 </p>
                 <Link href="/blog/[slug]" as={`/blog/${slug.current}`}>
                     <a className="font-semibold">{title}</a>
@@ -160,7 +161,7 @@ const Blog = (props) => {
 
 Blog.getInitialProps = async () => ({
     posts: await client.fetch(groq`
-        *[_type == "post"]
+    *[_type == "post"]
     `)
 })
 
