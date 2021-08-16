@@ -41,7 +41,7 @@ export default function Hero() {
                       />
                     </svg>{" "}
                     But what if I told you that multiple versions of the same
-                    content should'nt require multiple projects?
+                    content shouldn't require multiple projects?
                   </p>
                   <p className="text-base text-white pb-3 md:pb-0 md:pr-5  md:text-lg">
                     <svg

@@ -1,19 +1,21 @@
 import Hero from '../components/Hero'
-import How from '../components/How'
+import Rope from '../components/Rope'
 import Packages from '../components/Packages'
+import ClientList from '../components/ClientList'
+import How from '../components/How'
 import Alacarte from '../components/Alacarte'
-// import TandP from '../components/TandP'
-import Blog from '../components/Blog'
+import Testimonials from '../components/Testimonials'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Rope />
       <Packages />
+      <ClientList />
       <How />
       <Alacarte />
-      {/* <TandP /> */}
-      <Blog />
+      <Testimonials />
     </>
   );
 }
