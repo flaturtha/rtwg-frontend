@@ -1,4 +1,4 @@
-import Swoopy from "../components/Swoopy";
+import Jagged from "../components/Jagged";
 
 export default function Hero() {
   return (
@@ -9,8 +9,8 @@ export default function Hero() {
         alt=""
       />
       <div className="relative bg-opacity-75 bg-indigo-800">
-        <Swoopy />
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <Jagged />
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20 lg:pb-0">
           <div className="max-w-2xl sm:mx-auto lg:max-w-5xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
               <div className="mb-10 md:mx-auto sm:text-center md:mb-12">

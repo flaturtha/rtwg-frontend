@@ -1,0 +1,10 @@
+<svg
+    fill="white"
+    width=48px
+    height=100px
+    viewBox="0 0 48 1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>{"Rectangle 5"}</title>
+    <path d="M0 0h48v1H0z" fill="#063855" fillRule="evenodd" />
+  </svg>

@@ -1,4 +1,4 @@
-export default function Logo (props) {
+export default function Swoopy (props) {
   return (
     <svg className="absolute inset-x-0 bottom-0 text-white" viewBox="0 0 1160 163" {...props}>
     <path
