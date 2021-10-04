@@ -11,7 +11,7 @@ export default function Nav() {
     <div className="bg-indigo-800 sticky top-0 z-50 shadow-xl">
       {/* <Jagged /> */}
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="relative flex items-center justify-between z-50">
+        <div className="relative flex items-center justify-between z-50 flex-col md:flex-row">
           <a
             href="/"
             aria-label="Company"
@@ -23,7 +23,7 @@ export default function Nav() {
               R&middot;T&middot;W&middot;G
             </span>
           </a>
-          <p className="font-semibold text-lg text-indigo-100">Content Marketing Consulting for Innovative Tech Companies</p>
+          <p className="font-semibold md:text-lg text-indigo-100 text-center mt-2 text-base">Content Marketing Consulting for Innovative Tech Companies</p>
         </div>
       </div>
     </div>

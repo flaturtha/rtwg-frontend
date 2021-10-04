@@ -220,8 +220,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-indigo-200 sm:flex-row">
-          <p className="text-sm text-gray-100">
-            © Copyright 1995 &ndash; 2021 RICHTHEWRITERGUY. All rights reserved.
+          <p className="text-sm text-gray-100 mx-auto">
+            © Copyright 1995 &ndash; 2021 &hellip; RICHTHEWRITERGUY, all&nbsp;rights&nbsp;reserved
           </p>
           <div className="hidden flex items-center mt-4 space-x-4 sm:mt-0">
             <a
