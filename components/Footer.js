@@ -2,9 +2,9 @@ import Logo from '../components/Logo'
 
 export default function Footer() {
   return (
-    <div className="relative mt-16 bg-indigo-800">
+    <div className="relative bg-indigo-800">
       <svg
-        className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-indigo-800"
+        className="hidden absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-indigo-800"
         preserveAspectRatio="none"
         viewBox="0 0 1440 54"
       >
@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <a
-              href="/"
+              href="#"
               aria-label="Go home"
               title="Company"
               className="inline-flex items-center"
@@ -29,7 +29,7 @@ export default function Footer() {
             </a>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-indigo-50">
-                Content Marketing Consultant | "Customer Success Story" Specialist | Creator of the R.O.P.E.™ Method.
+              I help companies that push the technological envelope tell better stories | Content Marketing Consultant | “Customer Success Story” Specialist
               </p>
               <p className="mt-4 text-sm text-indigo-50">
                 Helping tell customer success stories since 1995.
@@ -44,7 +44,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     M-I SWACO
@@ -52,7 +52,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Schlumberger
@@ -60,7 +60,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     NASACT
@@ -68,7 +68,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     BP, Texas City Plant
@@ -76,7 +76,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-yellow-400 hover:text-yellow-300"
                   >
                     &hellip; more &hellip;
@@ -91,7 +91,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Oil &amp; Gas &mdash; Upstream
@@ -99,7 +99,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Oil &amp Gas &mdash; Downstream
@@ -107,7 +107,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Aviation
@@ -115,7 +115,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Travel Trade
@@ -130,7 +130,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Case Studies
@@ -138,7 +138,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Trade Publication Articles
@@ -146,7 +146,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     SEO Magnets
@@ -154,7 +154,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Newsletters
@@ -162,7 +162,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Small Business Books
@@ -177,7 +177,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     R.O.P.E.™ Method
@@ -185,7 +185,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     How I Work
@@ -193,7 +193,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     About
@@ -201,7 +201,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-indigo-50 hover:text-indigo-200"
                   >
                     Blog
@@ -209,7 +209,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="#"
                     className="transition-colors duration-300 text-yellow-400 hover:text-yellow-300"
                   >
                     Book Roadmap Session
@@ -225,7 +225,7 @@ export default function Footer() {
           </p>
           <div className="hidden flex items-center mt-4 space-x-4 sm:mt-0">
             <a
-              href="/"
+              href="#"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-indigo-200"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -233,7 +233,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="/"
+              href="#"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-indigo-200"
             >
               <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -242,7 +242,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="/"
+              href="#"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-indigo-200"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
